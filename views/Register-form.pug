@@ -1,0 +1,18 @@
+h1= title
+div#container_demo.row
+ div#wrapper  
+  form(class='form-control' method='POST' action='/register')
+   div(class='form-group')
+    label(for='exampleInputEmail1') FULL NAME
+    input(type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" placeholder="Enter fullname")
+   div(class='form-group')    
+    label(for='exampleInputEmail1') EMAIL
+    input(type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter your email")
+   div(class='form-group')
+    label(for='exampleInputPassword1') PASSWORD
+    input(type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Enter password")
+   div(class='form-group')
+    button(class='btn btn-primary' type='submit') signup
+    hr
+    p Have an account?
+    a(href='login') Login	

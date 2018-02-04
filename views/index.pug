@@ -1,0 +1,11 @@
+extends layout
+
+block content
+ div.container
+  if condition
+    include Register-form
+  else
+    include login
+    include register
+    include profile
+  

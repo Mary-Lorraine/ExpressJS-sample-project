@@ -1,0 +1,23 @@
+doctype html
+html
+   head
+      title REGISTER
+      script(language="javascript" src="../js/bootstrap.min.js")
+      link(rel='stylesheet', href="../css/bootstrap.min.css")
+      link(rel='stylesheet', href="../stylesheets/style.css")
+   body
+     div.container
+       div#container_demo.row
+         div#wrapper
+           form.form-control(method='POST' action='/login')
+             div.form-group
+               label(for='exampleInputEmail1') EMAIL
+               input#exampleInputEmail1.form-control(type="email" name="email" placeholder="Enter your email")
+             div.form-group
+               label(for='exampleInputPassword1') PASSWORD
+               input#exampleInputPassword1.form-control(type="password" name="password" placeholder="Enter password")
+             div.form-group
+               button.btn.btn-primary(type='submit') Login
+               hr
+               a(href='#') Forgot Password?
+
